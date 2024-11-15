@@ -35,6 +35,8 @@ while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
 ~~~
+</br>
+
 ### OUTPUT
 ### C program that illustrates files copying
 
@@ -69,8 +71,7 @@ if (flock(fd, LOCK_EX | LOCK_NB) == -1) {
 }else
 {printf("Acquiring exclusive lock using flock");}
 getchar();
-// release lock
-// lock is also released automatically when close() is called or process exits
+
 if (flock(fd, LOCK_UN) == -1) {
     printf("error");
 }else{
@@ -81,6 +82,13 @@ close (fd);
 return 0;
 }
 ~~~
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 
 ### OUTPUT
